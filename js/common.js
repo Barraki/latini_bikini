@@ -67,6 +67,18 @@ $(function () {
 		$('.mobile-menu').slideUp(400);
 	});
 
+	//фильтры script
+
+	$('.right_sidebar-mobile').click(function () {
+		element = $('.right_sidebar');
+		display = element.css('display');
+		if (display == 'none')
+			$('.right_sidebar').slideDown(400);
+		if (display == 'block')
+			$('.right_sidebar').slideUp(400);
+	});
+
+
 
 	$(function () {
 		$("#accordion").accordion({
@@ -87,7 +99,7 @@ $(function () {
 		});
 
 		$("#accordion-resizer").resizable({
-			minHeight: 140,
+			minHeight: 351,  
 			minWidth: 200,
 			resize: function () {
 				$("#accordion-2").accordion("refresh");
@@ -108,6 +120,7 @@ $(function () {
 			heightStyle: "content"
 		});
 	});
+
 
 	var keypressSlider = document.getElementById('keypress');
 	var input0 = document.getElementById('input-with-keypress-0');
@@ -205,13 +218,5 @@ $(function () {
 		});
 	});
 
-	$('#page-navigation').pagination({
-    dataSource: [1, 2, 3, 4, 5, 6, 7, ...  195],
-    callback: function(data, pagination) {
-        // template method of yourself
-        var html = template(data);
-        dataContainer.html(html);
-    }
-})
 
 });
