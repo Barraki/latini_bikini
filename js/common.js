@@ -30,6 +30,9 @@ $(function () {
 		loop: true,
 		margin: 10,
 		nav: false,
+		autoplay:true,
+    autoplayTimeout:1000,
+    autoplayHoverPause:true,
 		responsive: {
 			0: {
 				items: 1
@@ -120,6 +123,23 @@ $(function () {
 			heightStyle: "content"
 		});
 	});
+
+	$(document).ready(function(e) {
+    $("#rating").jRatingAdvance({
+		size: "14px",
+		buttons_color: "#e1e1e1",
+		active_color: "#d3aa62",
+		text: true,
+		rating: 4.5 
+	});
+});
+
+$('#myTab a').on('click', function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+
+
 
 
 	var keypressSlider = document.getElementById('keypress');
@@ -217,6 +237,14 @@ $(function () {
 			}
 		});
 	});
+	
+	$(function() {
+
+		$('.checkbox-color').styler();
+	
+	});
+
+
 
 
 });
