@@ -1,0 +1,43 @@
+.j-rating {
+	font-size: 14px;
+	position: relative;
+	display: inline-block;
+	
+}
+
+.j-rating .stars {
+	display: inline-block;	
+}
+
+.j-rating .top {
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.j-rating .bottom {
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: #CCC;
+}
+
+.j-rating .glyphicon {
+	left: 0.5px;	
+}
+
+.j-rating .text {
+	float: right;
+	line-height: 1.1;
+	margin-left: 5px;
+	padding: 3px 5px;
+	color: #707178;
+	font-size: 12px;
+	font-weight: 300;
+	letter-spacing: 0.12px;
+	border-radius: 3px;
+	cursor: default;
+	text-align: center;
+	vertical-align: middle;
+	display: flex;
+	align-items: center;
+}

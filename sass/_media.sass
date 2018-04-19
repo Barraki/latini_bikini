@@ -1,0 +1,549 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+
+//Extra large: ≥1200px
++media-breakpoint-down(xl)
+
+
+//Large: ≥992px
++media-breakpoint-down(lg)
+	.share_block
+		margin-top: 15px
+	.fotorama__nav__shaft
+		flex-direction: row !important
+	.fotorama__nav-wrap
+		margin-top: 20px
+		width: auto
+		position: relative
+		left: 0
+	.fotorama__stage
+		margin: 0
+	.features 
+		h2
+			font-size: 20px
+		.features_block
+			margin-bottom: 50px
+	.fotorama
+		justify-content: center !important
+	.btn
+		font-size: 10px !important
+		padding: 0 2px !important
+	#content 
+		.left_side 
+			.description-item 
+				ul
+					padding: 0 
+		.right_side 
+			.button-block 
+				.like_btn
+					font-size: 8px
+					margin-left: 16px
+					padding: 0
+				.btn
+					width: 160px 
+			h1
+				font-size: 28px
+	.preview-catalog 
+		.preview
+			margin-top: 1%
+			right: 10%
+	.right_sidebar 
+		width: 90%
+		.filter_item_list 
+			h3
+				span  
+					display: none
+			.filter_item
+				padding-left: 30px
+	.items
+		li.price-item
+			margin: 0 auto
+			margin-bottom: 30px
+			&:nth-child(1n+1)
+				margin-right: auto
+			&:nth-child(4n+1)
+				margin-left: auto
+				
+	.author
+		display: flex
+		justify-content: flex-end
+	.img_block-small
+		a.btn_white
+			top: 210px
+	.wide
+		a.btn_white
+			top: 121px
+	.img_block		
+		.offer_tittle
+			position: absolute
+			top: 420px
+	.bg-dark
+	  height: 750px			
+	.img_block
+		.offer_tittle
+			span
+				font-size: 30px
+
+	.instastyle_list
+		li
+			margin: 15px 18px
+
+	.world-latini
+		height: 610px
+		.img_compos
+			background-position: 25%
+		.desc-compos
+			h1
+				font-size: 42px		
+				margin-bottom: 30px
+	
+	.subscribes
+		.subscribes_img
+			.subscribes-tittle
+				margin-right: 10px
+
+	footer
+		.footer_contacts
+			.contact_block
+				margin-right: 0px
+
+//Medium: ≥768px
++media-breakpoint-down(md)
+	#content 
+		margin-top: 10px
+		.left_side 
+			padding: 0 15px
+			h1 
+				display: block
+				margin-bottom: 10px
+				padding: 0 50px
+		.right_side
+			h1 
+				display: none
+		.right_side
+			margin-top: 20px
+			padding: 0 15px !important
+	.breadcrump li
+		font-size: 9.9px
+	.preview-catalog 
+		.preview 
+			right: 0%
+			h1
+				font-size: 30px
+			a 
+				margin-top: 0
+
+	.composition
+		height: 370px
+
+	.composition	
+		.composition_tittle
+			span
+				font-size: 24px
+			.border-composition
+				width: 98%
+				height: 87%
+		.btn_row
+			margin-top: 19%
+
+	.bg-dark
+		background-size: cover
+		background-position: 40%
+		height: 620px 
+
+	.img_block
+		.offer_tittle
+			span
+				font-size: 24px
+			p.description
+				font-size: 18px
+	.img_block		
+		.offer_tittle
+			position: absolute
+			top: 350px
+
+
+	.img_block-small
+		span
+			font-size: 20px
+		p 
+			font-size: 15px
+		a.btn_white
+			top: 140px
+
+	.wide
+		a.btn_white
+			top: 80px
+	.world-latini
+		height: 900px
+		.desc-compos
+			height: 430px
+			h1
+				margin-top: 22px
+	.img_compos
+		height: 520px
+
+	.instastyle_list 
+		li
+			margin: 15px 15px
+
+	.subscribes
+		.subscribes_form
+			form
+				width: 100%
+		.subscribes_img
+			.subscribes-tittle
+				font-size: 30px
+				margin-left: 10px
+
+//Small: ≥576px
++media-breakpoint-down(sm)
+	#content 
+		.left_side 
+			.description-item 
+				ul
+					display: flex
+					flex-direction: column
+					height: auto
+					li 
+						margin: 5px 0
+						a 
+						.nav-link.active
+							color: #000000 
+							background: none !important
+							border: none !important
+							transition: all 0.2s ease
+							&::after
+								display: block
+								content: ''
+								width: 100%
+								height: 2px
+								background-color: #d3aa62
+								transform: translateY(3px) scale(1)
+								transition: all 0.2s ease
+	.breadcrump 
+		li
+			padding-right: 5px
+			&:nth-child(8)
+				display: none
+			&:nth-child(7)
+				display: none
+	#content 
+		.left_side 
+			h1 
+				display: block
+				margin-bottom: 10px
+				padding: 0 5px
+	#accordion-resizer 
+		height: 370px 
+	.right_sidebar
+		margin: 0 auto
+		margin-bottom: 20px
+		width: 87.4%
+		display: none
+	.right_sidebar-mobile
+		display: flex
+		flex-direction: row
+		justify-content: center
+		p 
+			font-size: 14px
+			font-weight: 600
+			margin-right: 15px
+		i 
+			font-size: 20px
+			
+	.navigation
+		margin-top: 20px
+	.preview-catalog 
+		display: none
+	.img_block
+		.offer_tittle
+			top: 315px
+			span
+				font-size: 28px
+	.socweb
+		ul
+			flex-direction: row
+			align-items: center
+			li 
+				margin: 0
+
+	.author
+		justify-content: flex-start
+		margin-top: 10px
+		li 
+			justify-content: flex-start
+	.contact-items
+		display: none
+	.condition_row
+
+	.condition
+		display: none
+
+	.desktop 
+		display: none  
+	.hamburger 
+		display: block 
+		display: flex
+		justify-content: center
+		align-items: center
+		font-size: 20px
+		p
+			margin: 0
+			margin-right: 5px
+
+	.nav-bar_row
+		display: flex !important
+		justify-content: center !important
+	
+
+	.composition	
+		height: 285px
+		.composition_tittle
+			margin-top: 0px
+			span
+				font-size: 13px
+			.border-composition
+				width: 97%
+				height: 75%
+		.btn_row
+			margin-top: 28%
+	
+	.bg-dark
+	  height: 715px
+	
+	.world-latini
+		height: 970px
+		.desc-compos
+			height: 500px
+
+	.subscribes
+		height: 550px
+		.subscribes_img
+			justify-content: center
+			display: flex
+			.subscribes-tittle
+				margin-bottom: 40px
+				margin: 0
+				margin-top: 20px
+				width: 400px
+		.subscribes_form
+			form
+				width: 380px
+				margin-bottom: 50px
+
+//Extra small: >0
++media-breakpoint-down(xs)
+	.breadcrump 
+		margin: 0 auto
+		margin-top: 10px
+		li
+			padding-right: 5px
+			&:nth-child(10)
+				display: none
+			&:nth-child(9)
+				display: none
+	#content 
+		.left_side 
+			h1 
+				font-size: 20px
+			.tab-content
+				padding: 23px
+	.navigation 
+		ul 
+			li
+				font-size: 8px
+				margin-right: auto
+	.our-items h1, h2
+		font-size: 22px
+	.pagination
+		margin-bottom: 50px
+
+	.subscribes
+		height: 580px
+		.subscribes_img
+			.subscribes-tittle
+				margin-bottom: 40px
+		.subscribes_form
+			form
+				width: 300px
+				margin-bottom: 0px
+				label
+					font-size: 11px
+	.hamburger 
+		display: block 
+		display: flex
+		justify-content: center
+		align-items: center
+		font-size: 20px
+		padding-right: 15px
+	.nav-bar_row
+		display: flex !important
+		justify-content: flex-end !important	
+	.subscribes
+		margin: 0
+		max-width: 100%
+
+	.author
+		ul
+			li
+				a
+					text-align: left !important
+
+	.composition	
+		height: 200px
+		.composition_tittle
+			margin-top: 0px
+			padding-left: 15px
+			padding-right: 0px
+			padding: 12px
+			width: 220px
+			span
+				font-size: 12px
+			.border-composition
+				width: 97%
+				height: 75%
+		.btn_row
+			margin-top: 18%	
+			width: 100%
+			.btn_black
+				width: 150px
+
+	.logo-bg
+		display: flex !important
+		justify-content: center !important
+	.condition_row
+		height: 130px
+	.nav_icon
+		margin: 0
+		.nav_icon_list
+			margin-right: 15px
+			.nav_icon_item 
+				.buy_items
+					right: 42px
+	.img_offers 
+		display: flex
+		justify-content: center !important
+		width: 100%
+		margin: 50px 0
+		.img_block-small
+
+	.bg-dark
+		height: 600px
+		background-size: cover
+		background-position: 0 0%
+
+	.img_block-small
+		span
+			font-size: 15px
+		a.btn_white
+			top: 150px
+			display: flex
+			justify-content: center
+			align-items: center
+
+	.img_block-small 
+		span	
+			margin-bottom: 5px
+			height: 100%	
+	
+	.wide
+		a.btn_white
+			top: 30px
+
+	.our-items 
+		h2
+			font-size: 25px
+
+	.world-latini 
+		height: 1150px
+		.desc-compos
+			height: 670px
+
+	.img_offers
+		.long-column
+			height: 630px	
+
+@media only screen and (max-width : 375px)
+	.instastyle 
+		.inst_tittle
+			font-size: 30px
+
+	.composition 
+		.composition_tittle 
+			.border-composition		
+				height: 80%
+
+	.our-items 
+		h2
+			font-size: 20px	
+
+	.world-latini 
+		height: 1000px
+		.desc-compos 
+			height: 520px
+			h1		
+				font-size: 25px
+
+
+@media only screen and (max-width : 320px)
+	.wide 
+		a.btn_white
+			top: 30px
+
+
+
+	.composition 
+		.btn_row
+			margin-top: 50px
+
+	.world-latini 
+		height: 1050px
+		.desc-compos 
+			height: 550px
+			h1		
+				font-size: 25px
+
+	.nav_carousel
+		padding: 0 12px			
+
+	.nav-bar_row 
+		nav 
+			ul	
+				flex-direction: column
+				justify-content: center
+				li 
+					padding: 0
+				
+	.mobile-menu
+		width: 100%
+
+	.img_block-small
+		a.btn_white
+			width: 150px
+			height: 50px
+			top: 40%
+			right: 23%	
+
+	.wide
+		a.btn_white
+			top: 6%
+/*==========  Mobile First  ==========*/
+
+//Extra small: <576px
++media-breakpoint-up(xs)
+
+//Small: ≤576px
++media-breakpoint-up(sm)
+
+//Medium: ≤768px
++media-breakpoint-up(md)
+
+//Large: ≤992px
++media-breakpoint-up(lg)
+
+//Extra large: ≤1200px
++media-breakpoint-up(xl)
